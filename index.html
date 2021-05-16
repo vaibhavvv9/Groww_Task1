@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Login Validation</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='index.css' type='text/css' />
+<script src="index.js"></script>
+</head>
+<body onload="document.login.email.focus();">
+    <div class = "leftView">
+<p class = "leftView_text" >Groww Students</p>
+    </div>
+    <div class="rightView">
+<h1>Login Form</h1>
+
+
+        <form name='login' onSubmit="return formValidation();">
+                <ul>
+
+                        <label for="email" style="color: white; font-size: 22px;">Email:</label>
+                        <input type="text" name="email" size="50" placeholder="Email Address of Student" />
+                        <div id="error-email"></div>
+                   <br/>
+                        <label for="passid" style="color: white; font-size: 22px;">Password:</label>
+                        <input type="password" name="passid" size="12" placeholder="It consist atleast 1 upper ,lower and number case" />
+                        <div id="error-password"></div>
+                   <br/>
+                        <label for="username" style="color: white; font-size: 22px;">Name:</label>
+                        <input type="text" name="username" size="50" style="margin-right: -10px;" placeholder="Should be Alphabets only" />
+                        <div id="error-name"></div>              
+                   <br/>       
+                        <label for="rollnumber" style="color: white; font-size: 22px;">Roll Number:</label>
+                        <input type="text" name="rollnumber" size="6" style="margin-right: 51px;" placeholder="Alphanumeric with length 6"/>   
+                        <div id="error-roll"></div>  
+                   <br/>     
+                         <label for="gender" style="color: white; font-size: 22px; margin:0px 75px 0px -100px">Gender:</label>
+                         <input type="radio" name="gender" size="6" value="Male" /> 
+                         <span style="color: white; font-size: 18px; margin-right: 51px;">Male</span>
+                         <input type="radio" name="gender" size="6" value="Female"/>   
+                         <Span style="color: white; font-size: 18px;">Female</Span>
+                         <div id="error-gender"></div>  
+                    <br/>    
+                        <label for="mobileNumber" style="color: white; font-size: 22px;">Mobile Number:</label>
+                        <input type="text" name="mobileNumber" size="10" style="margin-right: 76px;" placeholder="10 Digit Mobile Number"/> 
+                        <div id="error-mobile"></div>      
+                   <br/>
+                        <label for="birthday" style="color: white; font-size: 22px;">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday" min="1947-01-01" max="2009-05-14" >
+                        <div id="error-birthday"></div>
+                   <br/>
+       
+                        <label for="courses" style="color: white; font-size: 22px;">Courses:</label>
+                        <select name="courses">
+                        <option selected="" value="Default">(Please select a Course)</option>
+                        <option value="AF">Computer Science</option>
+                        <option value="AL">Information Technology</option>
+                        <option value="DZ">Mechanical Engineering</option>
+                        <option value="AS">Chemical Engineering</option>
+                        <option value="AD">Civil Engineering</option>
+                        </select>
+                        <div id="error-courses"></div>
+                  <br/>
+                        <input type="submit" name="submit" value="Submit" />
+                        <div id="error-nope"></div>
+                 </ul>
+        </form>
+
+</div>
+</body>
+</html>
